@@ -139,4 +139,4 @@ resqai-backend/
   * **Historical Incident Playback:** Replay past incidents on the map to review and analyze response effectiveness.
   * **Multi-User Support:** Implement user roles (Dispatcher, Supervisor) and authentication for a professional command center environment.
 
-http://googleusercontent.com/memory_tool_content/0
+
