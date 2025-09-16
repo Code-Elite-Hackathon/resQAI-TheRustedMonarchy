@@ -1,10 +1,10 @@
-// src/components/MapContainer.jsx
+
 import React, { useEffect, useRef, useState } from 'react';
 import { MapContainer as LeafletMap, TileLayer, Marker, Popup, Tooltip, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// New set of resource icons
+
 const resourceIcons = {
     'Hazmat': new L.Icon({ iconUrl: 'https://img.icons8.com/ios-filled/50/FF0000/biohazard.png', iconSize: [30, 30] }),
     'Helicopter': new L.Icon({ iconUrl: 'https://img.icons8.com/ios-filled/50/0000FF/helicopter.png', iconSize: [30, 30] }),
@@ -12,7 +12,7 @@ const resourceIcons = {
     Default: new L.Icon({ iconUrl: 'https://img.icons8.com/ios-filled/50/000000/vehicle.png', iconSize: [25, 25] })
 };
 
-// Function to generate a random location near an incident
+
 const generateNearbyPosition = (incidentPosition) => {
     const [lat, lng] = incidentPosition;
     const radius = 0.01; // Approx 1km
@@ -65,7 +65,7 @@ export default function MapContainer({ incidents, resources, selectedIncidentId,
   }, [resources]);
 
   useEffect(() => {
-    // When incidents change, generate new units near them
+
     const activeIncidents = Object.values(incidents);
     if (activeIncidents.length > 0) {
         const generatedUnits = [
@@ -115,10 +115,9 @@ export default function MapContainer({ incidents, resources, selectedIncidentId,
           </Marker>
         ))}
 
-        {/* --- REMOVED PREVIOUS UNITS --- */}
-        {/* The old resource mapping is removed. */}
 
-        {/* --- ADDED NEW UNITS --- */}
+
+
         {newUnits.map((unit) => (
              <Marker
                 key={unit.id}

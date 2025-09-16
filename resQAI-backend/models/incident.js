@@ -1,4 +1,4 @@
-// models/incident.js
+
 const mongoose = require('mongoose');
 
 const incidentSchema = new mongoose.Schema({

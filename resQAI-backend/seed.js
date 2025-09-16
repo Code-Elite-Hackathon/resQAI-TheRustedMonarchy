@@ -1,4 +1,4 @@
-// seed.js
+
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const Incident = require('./models/incident');

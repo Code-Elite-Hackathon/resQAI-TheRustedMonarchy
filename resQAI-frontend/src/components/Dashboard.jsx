@@ -1,4 +1,4 @@
-// src/components/Dashboard.jsx
+
 import React, { useState, useEffect, useCallback } from 'react';
 import Header from './Header';
 import EventFeed from './EventFeed';
@@ -8,7 +8,7 @@ import NewIncidentModal from './NewIncidentModal';
 import { api } from '../services/api';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// Initialize the Google AI Client with your API key
+
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 /**
@@ -48,11 +48,11 @@ const getAIRecommendation = async (incidentData) => {
     const response = await result.response;
     const text = response.text();
     console.log("AI Response:", text);
-    return text; // This will be a detailed JSON string
+    return text; 
 
   } catch (error) {
     console.error("Error fetching AI recommendation:", error);
-    // Return a detailed fallback JSON if the API call fails
+
     return '{"situationAssessment": ["AI service is currently unavailable."], "immediateActions": ["Follow standard protocols."], "recommendedUnits": ["Dispatch units based on manual assessment."], "potentialHazards": ["Unknown due to service outage."], "safetyPrecautions": ["Maintain heightened situational awareness."]}';
   }
 };
@@ -97,7 +97,7 @@ export default function Dashboard() {
 
       const newIncidentPayload = {
         ...incidentData,
-        aiRecommendation: recommendation, // Store the detailed JSON string
+        aiRecommendation: recommendation, 
       };
 
       await api.createIncident(newIncidentPayload);

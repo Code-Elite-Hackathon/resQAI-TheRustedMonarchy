@@ -1,4 +1,4 @@
-// This file contains mock data to simulate a real-time environment.
+
 export const mockResources = [
     { id: 'AMB-01', type: 'Ambulance', status: 'Available', location: 'Queen\'s Medical Centre' },
     { id: 'AMB-02', type: 'Ambulance', status: 'On Scene', location: 'INC-0834' },
@@ -12,12 +12,12 @@ export const mockIncidents = {
     'inc-0834': {
         id: 'INC-0834',
         title: 'Multi-vehicle collision on ISBT Sec-17, Chandigarh',
-        // --- ADD COORDINATES ---
+
 
         location: 'ISBT Sec-17, Chandigarh',
         priority: 'CRITICAL',
         status: 'Active',
-        position: [30.73885, 76.78484], // [lat, lng]
+        position: [30.73885, 76.78484], 
         reported: '13:20:43',
         assignedUnits: ['AMB-02', 'POL-02'],
         log: ['13:20:43 - Incident reported.', '13:22:10 - Units AMB-02, POL-02 dispatched.'],
@@ -26,8 +26,8 @@ export const mockIncidents = {
     'inc-0835': {
         id: 'INC-0835',
         title: 'Structure Fire Reported',
-        // --- ADD COORDINATES ---
-        position: [30.66892, 76.78669], // Colwick Industrial Estate
+
+        position: [30.66892, 76.78669], 
         location: 'Shaheed Bhagat Singh International Airport, SAS Nagar',
         priority: 'HIGH',
         status: 'Active',
@@ -40,8 +40,8 @@ export const mockIncidents = {
     'inc-0836': {
         id: 'INC-0836',
         title: 'Water Shortage',
-        // --- ADD COORDINATES ---
-        position: [30.62638, 76.24918], // Colwick Industrial Estate
+
+        position: [30.62638, 76.24918], 
         location: 'Shaheed Bhagat Singh International Airport, SAS Nagar',
         priority: 'HIGH',
         status: 'Active',

@@ -1,8 +1,8 @@
-// src/components/ActionPanel.jsx
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { Send, AlertTriangle, ChevronsRight, RotateCcw, Shield, Zap, Siren, ChevronsDown } from 'lucide-react';
 
-// A small helper component for rendering the new AI recommendation sections
+
 const RecommendationSection = ({ title, items, icon, colorClass }) => (
     <div>
         <h6 className={`font-bold text-sm mb-1 flex items-center gap-2 ${colorClass}`}>
@@ -19,7 +19,7 @@ const RecommendationSection = ({ title, items, icon, colorClass }) => (
 export default function ActionPanel({ selectedIncident, resources, onDispatchUnit, onRecallUnit }) {
     const [showAvailableUnits, setShowAvailableUnits] = useState(false);
 
-    // Parse the AI recommendation JSON string or use as is if already an object
+
     const aiRecommendation = useMemo(() => {
         if (!selectedIncident || !selectedIncident.aiRecommendation) {
             return null;
@@ -28,7 +28,7 @@ export default function ActionPanel({ selectedIncident, resources, onDispatchUni
             return selectedIncident.aiRecommendation;
         }
         try {
-            // New addition: Clean the string by removing markdown code block fences
+
             const cleanedText = selectedIncident.aiRecommendation.replace(/```json\s*|```/g, '').trim();
             return JSON.parse(cleanedText);
         } catch (e) {

@@ -1,4 +1,4 @@
-// src/components/EventFeed.jsx
+
 import React, { memo } from 'react';
 import { ShieldAlert, Bot, Truck, Info } from 'lucide-react';
 
@@ -9,7 +9,7 @@ const eventTypeDetails = {
   info: { icon: <Info size={16} className="text-gray-500" />, style: 'border-gray-400' },
 };
 
-// Memo is safe to use here as props are simple
+
 const EventFeed = memo(function EventFeed({ events, onEventSelect }) {
   return (
     <div className="bg-white rounded-lg shadow-md flex flex-col h-full">

@@ -1,12 +1,12 @@
-// src/services/api.js
+
 
 const API_BASE_URL = 'http://localhost:5001/api';
 
 /**
  * A helper function to handle fetch requests and JSON parsing.
- * @param {string} url - The URL to fetch.
- * @param {object} options - The options for the fetch request.
- * @returns {Promise<any>} - The JSON response.
+ * @param {string} url 
+ * @param {object} options 
+ * @returns {Promise<any>} 
  */
 const fetchJson = async (url, options = {}) => {
     try {
@@ -31,7 +31,7 @@ const fetchJson = async (url, options = {}) => {
 export const api = {
     getIncidents: () => fetchJson(`${API_BASE_URL}/incidents`),
     getResources: () => fetchJson(`${API_BASE_URL}/resources`),
-    // --- CORRECTED LINE ---
+    
     getEvents: () => fetchJson(`${API_BASE_URL}/events`),
     createIncident: (incidentData) => fetchJson(`${API_BASE_URL}/incidents`, {
         method: 'POST',

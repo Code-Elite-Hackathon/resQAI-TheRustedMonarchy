@@ -1,4 +1,4 @@
-// src/components/Header.jsx
+
 import React, { useState, useEffect } from 'react';
 import { Siren, Truck, PlusCircle } from 'lucide-react';
 import logo from '../assets/logo.png';
