@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* src/index.css */
+
+/* --- Leaflet Map Container --- */
+.leaflet-container {
+  background-color: #121212; /* Match our dark theme */
+  border-radius: 6px;
+}
+
+/* --- Tailwind styles for Popups --- */
+/* We create custom classes that Leaflet's popups can use */
+.leaflet-popup-content-wrapper {
+  @apply rounded-lg bg-white p-0;
+}
+.leaflet-popup-content {
+  @apply text-gray-900 m-3; /* Set margin inside the popup */
+}
+.leaflet-popup-tip {
+  @apply bg-white;
+}
+
+/* --- Pulsing Incident Blip Marker (for Leaflet) --- */
+.incident-blip-marker {
+  background-color: rgb(239, 68, 68); /* Red */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 0 10px rgb(239, 68, 68), inset 0 0 3px white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 10px 10px rgba(239, 68, 68, 0); }
+  100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* src/index.css */
+
+/* --- Custom UI Classes --- */
+.panel-glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-lg;
+}
+
+.critical-pulse {
+  animation: critical-pulse 2s infinite;
+}
+
+@keyframes critical-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { box-shadow: 0 0 10px 10px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}

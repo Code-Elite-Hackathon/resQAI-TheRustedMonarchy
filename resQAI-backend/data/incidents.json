@@ -1,0 +1,22 @@
+[
+    {
+        "id": "INC-0834",
+        "title": "Structure Fire",
+        "location": "123 Market St, Nottingham",
+        "position": [52.9548, -1.1581],
+        "priority": "CRITICAL",
+        "assignedUnits": ["ENG-01", "TRK-01"],
+        "aiRecommendation": "Recommend immediate evacuation of adjacent buildings due to wind conditions.",
+        "log": ["20:01 - Initial call received", "20:03 - ENG-01, TRK-01 dispatched"]
+    },
+    {
+        "id": "INC-0835",
+        "title": "Traffic Collision",
+        "location": "Derby Road & Triumph Road",
+        "position": [52.9500, -1.1881],
+        "priority": "HIGH",
+        "assignedUnits": [],
+        "aiRecommendation": "High traffic area. Recommend diverting traffic.",
+        "log": ["20:15 - Report of two-vehicle collision"]
+    }
+]

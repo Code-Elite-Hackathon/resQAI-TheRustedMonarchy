@@ -1,0 +1,7 @@
+[
+    { "id": "ENG-01", "type": "Engine", "status": "On Scene", "location": "INC-0834", "position": [52.9548, -1.1581] },
+    { "id": "TRK-01", "type": "Truck", "status": "On Scene", "location": "INC-0834", "position": [52.9548, -1.1581] },
+    { "id": "AMB-01", "type": "Ambulance", "status": "Available", "location": "Station 2", "position": [52.9530, -1.1481] },
+    { "id": "FRU-01", "type": "Fast Response Unit", "status": "Available", "location": "Station 1", "position": [52.9580, -1.1531] },
+    { "id": "CMD-01", "type": "Command", "status": "Available", "location": "HQ", "position": [52.9510, -1.1601] }
+]

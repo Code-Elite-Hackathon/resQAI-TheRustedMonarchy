@@ -1,0 +1,5 @@
+[
+    { "id": "evt-1", "time": "20:15", "text": "New incident reported: Traffic Collision at Derby Road & Triumph Road.", "type": "critical", "incidentId": "INC-0835" },
+    { "id": "evt-2", "time": "20:03", "text": "ENG-01, TRK-01 dispatched to INC-0834.", "type": "dispatch", "incidentId": "INC-0834" },
+    { "id": "evt-3", "time": "20:01", "text": "New incident reported: Structure Fire at 123 Market St.", "type": "critical", "incidentId": "INC-0834" }
+]
